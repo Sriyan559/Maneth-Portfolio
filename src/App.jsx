@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import BackgroundEffect from './components/BackgroundEffect';
+import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './sections/Hero';
@@ -25,6 +26,8 @@ export default function App() {
 
   return (
     <>
+      <CustomCursor />
+
       {/* Fixed background effects */}
       <BackgroundEffect />
 
