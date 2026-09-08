@@ -12,7 +12,7 @@ export const profile = {
   email: "manethnanayakkara78@gmail.com",
   phone: "+94 70 147 2511",
   location: "Sri Lanka",
-  locationFull: "Alawwa, Sri Lanka",
+  locationFull: "Colombo, Sri Lanka",
 
   // ── Social links ─────────────────────────────────────────
   // TODO: Replace with your actual URLs before deploying
@@ -26,7 +26,7 @@ export const profile = {
   // ── Hero ─────────────────────────────────────────────────
   heroIntro: "Hello, I'm",
   heroDescription:
-    "Information Technology undergraduate with hands-on experience in full-stack web, mobile, and embedded systems development. Familiar with REST APIs, MVC and 3-tier architectures, role-based access control, relational and NoSQL databases, cloud deployment, and AWS fundamentals.",
+    "Information Technology undergraduate At SLIITwith hands-on experience in full-stack web, mobile, and embedded systems development. Familiar with REST APIs, MVC and 3-tier architectures, role-based access control, relational and NoSQL databases, cloud deployment, and AWS fundamentals.",
 
   rotatingRoles: [
     "AI Engineer",
@@ -60,16 +60,16 @@ export const profile = {
 export const education = [
   {
     id: 1,
-    title: "Software Engineering Intern",
-    institution: "Multi Talent Technology",
-    period: "Late 2024 – Present",
+    title: "AI Engineering Intern",
+    institution: "Techromz (Pvt) Ltd",
+    period: "Late 2026 – Present",
     tag: "Current • Industry Role",
     side: "right",
     icon: "briefcase",
     description:
-      "Contributing to full-stack software development, client web applications, API integrations, and modern UI engineering.",
+      "Contributing to AI full-stack software development, client web applications, ModelAPI integrations, and modern UI engineering.",
     highlights: [
-      "Developing production-ready web solutions with React, Node.js, and modern tech stacks",
+      "Developing production-ready web solutions with React, Node.js,PHP,Laravel and modern tech stacks",
       "Collaborating with engineering team on database workflows, REST APIs, and UI architecture",
       "Actively participating in agile development sprints, code quality reviews, and testing",
     ],
@@ -79,8 +79,8 @@ export const education = [
     id: 2,
     title: "BSc (Hons) in Information Technology",
     institution: "Sri Lanka Institute of Information Technology (SLIIT)",
-    period: "2023 – 2026 (Expected)",
-    tag: "Undergraduate • 2nd Year",
+    period: "2024 – 2028 (Expected)",
+    tag: "Undergraduate • 3rd Year",
     side: "left",
     icon: "graduation",
     description:
@@ -101,7 +101,7 @@ export const certifications = [
     code: "CLF-C02",
     issuer: "Amazon Web Services",
     status: "In Progress",
-    statusType: "in-progress",
+    statusType: "Completed",
     topics: [
       "Cloud Concepts",
       "IAM",
