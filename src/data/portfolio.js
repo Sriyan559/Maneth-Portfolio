@@ -92,58 +92,6 @@ export const education = [
     ],
     status: "ongoing",
   },
-  {
-    id: 3,
-    title: "Trainee Account Assistant",
-    institution: "Liberty Motor Associates",
-    period: "May 2022 – July 2022",
-    tag: "Industry Experience",
-    side: "right",
-    icon: "briefcase",
-    description:
-      "Conducted financial data auditing, transactional record reconciliation, and digital database ledger management.",
-    highlights: [
-      "Assisted senior accounting team in transaction logging and daily reconciliation",
-      "Applied structured data management, numerical accuracy, and spreadsheet automation",
-      "Developed professional teamwork, corporate communication, and multitasking skills",
-    ],
-    status: "completed",
-  },
-  {
-    id: 4,
-    title: "GCE Advanced Level Examination",
-    institution: "Gurukula College, Kelaniya",
-    period: "2019 – 2021",
-    tag: "Commerce Stream",
-    side: "left",
-    icon: "graduation",
-    description:
-      "Completed Advanced Level with a strong analytical focus in accounting, economics, and business management.",
-    highlights: [
-      "Accounting – A (Distinction)",
-      "Business Studies – B",
-      "Economics – B",
-      "Built strong foundation in quantitative analysis, business logic & logical reasoning",
-    ],
-    status: "completed",
-  },
-  {
-    id: 5,
-    title: "GCE Ordinary Level Examination",
-    institution: "Gurukula College, Kelaniya",
-    period: "2013 – 2018",
-    tag: "Secondary Education",
-    side: "right",
-    icon: "book",
-    description:
-      "Built a strong academic foundation with multiple distinctions in core disciplines.",
-    highlights: [
-      "Mathematics – A (Distinction)",
-      "Health & Physical Education – A (Distinction)",
-      "Early leadership in school clubs and academic competitions",
-    ],
-    status: "completed",
-  },
 ];
 
 export const certifications = [
