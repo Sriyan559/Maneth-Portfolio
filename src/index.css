@@ -39,7 +39,8 @@ body {
 
 /* Custom pointer: enabled only for mouse/trackpad users. */
 @media (hover: hover) and (pointer: fine) {
-  body, body * { cursor: none !important; }
+  html.custom-cursor-enabled,
+  html.custom-cursor-enabled * { cursor: none !important; }
 
   .custom-cursor {
     position: fixed;
@@ -71,6 +72,15 @@ body {
     box-shadow: 0 0 10px #38bdf8;
   }
 
+  .custom-cursor::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border: 1px solid rgba(129, 140, 248, 0.32);
+    border-radius: inherit;
+    animation: cursor-halo 1.8s ease-in-out infinite;
+  }
+
   .custom-cursor.is-visible { opacity: 1; }
 
   .custom-cursor.is-active {
@@ -79,6 +89,11 @@ body {
     background: rgba(129, 140, 248, 0.16);
     border-color: #a5b4fc;
     box-shadow: 0 0 0 8px rgba(129, 140, 248, 0.08), 0 0 30px rgba(129, 140, 248, 0.5);
+  }
+
+  @keyframes cursor-halo {
+    0%, 100% { transform: scale(0.9); opacity: 0.35; }
+    50% { transform: scale(1.1); opacity: 0.9; }
   }
 }
 

@@ -12,6 +12,7 @@ export default function CustomCursor() {
     if (!supportsFinePointer.matches || reducedMotion.matches) return undefined;
 
     const cursor = cursorRef.current;
+    document.documentElement.classList.add('custom-cursor-enabled');
     let targetX = -100;
     let targetY = -100;
     let currentX = -100;
@@ -42,6 +43,7 @@ export default function CustomCursor() {
 
     return () => {
       cancelAnimationFrame(frameId);
+      document.documentElement.classList.remove('custom-cursor-enabled');
       document.removeEventListener('pointermove', onPointerMove);
       document.documentElement.removeEventListener('pointerleave', onPointerLeave);
       document.documentElement.removeEventListener('pointerenter', onPointerEnter);
