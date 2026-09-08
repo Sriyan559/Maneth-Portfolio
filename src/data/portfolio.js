@@ -35,7 +35,7 @@ export const profile = {
 
   // ── About ────────────────────────────────────────────────
   aboutText: [
-    "I am an Information Technology undergraduate with hands-on experience building full-stack web applications, cross-platform mobile apps, and embedded systems. I enjoy developing structured, scalable systems using REST APIs, MVC, and 3-tier architectures while working with technologies such as React, Node.js, Java, Spring Boot, MongoDB, and MySQL.",
+    "I am an Information Technology undergraduate At SLIIT with hands-on experience building full-stack web applications, cross-platform mobile apps, and embedded systems. I enjoy developing structured, scalable systems using REST APIs, MVC, and 3-tier architectures while working with technologies such as React, Node.js, Java, Spring Boot, MongoDB, and MySQL.",
     "I am actively expanding my knowledge in cloud technologies and AWS fundamentals, and I am keen to contribute to software engineering, cloud engineering, and full-stack development opportunities.",
   ],
 
