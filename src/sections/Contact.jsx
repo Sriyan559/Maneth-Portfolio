@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Send, CheckCircle, AlertCircle, Loader } from 'lucide-react';
+import { Mail, MapPin, Phone, MessageCircle, Send, CheckCircle, AlertCircle, Loader } from 'lucide-react';
 import { Github, Linkedin } from '../components/Icons';
 import SectionHeading from '../components/SectionHeading';
 import { profile, contactInfo } from '../data/portfolio';
@@ -103,6 +103,7 @@ export default function Contact() {
             <div className="flex flex-col gap-4">
               {[
                 { icon: Mail,   label: 'Email',    value: profile.email,        href: `mailto:${profile.email}` },
+                { icon: Phone,  label: 'Phone',    value: profile.phone,        href: `tel:${profile.phone.replace(/\s/g, '')}` },
                 { icon: MapPin, label: 'Location', value: profile.locationFull, href: null },
               ].map(({ icon: Icon, label, value, href }) => (
                 <div key={label} className="contact-info-row">
@@ -165,6 +166,19 @@ export default function Contact() {
                   >
                     <Linkedin size={15} aria-hidden="true" />
                     LinkedIn
+                  </a>
+                )}
+                {profile.phone && (
+                  <a
+                    href={`https://wa.me/${profile.phone.replace(/\D/g, '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Message on WhatsApp"
+                    className="btn-outline"
+                    style={{ padding: '0.55rem 1rem', fontSize: '0.85rem' }}
+                  >
+                    <MessageCircle size={15} aria-hidden="true" />
+                    WhatsApp
                   </a>
                 )}
               </div>
